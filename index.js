@@ -220,7 +220,6 @@ async function postAsSubmitter(client, submitterId, text) {
     icon_url: profile.image_192 || profile.image_72,
     blocks: [
       { type: "section", text: { type: "mrkdwn", text: text } },
-      { type: "context", elements: [{ type: "mrkdwn", text: "sent with broadcaster" }] }
     ]
   });
 }
